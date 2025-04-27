@@ -33,7 +33,7 @@ export default function Section4() {
       }
   
       try {
-        const response = await fetch(`http://192.168.29.134:3003/post?action=register&id=0&email=${formData.email}&number=${formData.number}&language=${formData.language}&password=${formData.password}`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/post?action=register&id=0&email=${formData.email}&number=${formData.number}&language=${formData.language}&password=${formData.password}`, {
           method: 'POST',
         });
   

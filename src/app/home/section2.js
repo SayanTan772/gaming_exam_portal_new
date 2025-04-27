@@ -34,7 +34,7 @@ export default function Section2() {
       }
   
       try {
-        const response = await fetch(`http://192.168.29.134:3003/get?action=login&number=${formData3.number}&password=${formData3.password}`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/get?action=login&number=${formData3.number}&password=${formData3.password}`);
         const result = await response.json();
 
         // console.log(result);

@@ -72,7 +72,7 @@ export default function Section1() {
           setShow('flex');
           setLoading(false);
         }
-        // console.log(process.env.NEXT_PUBLIC_BASE_URL)
+        
       } catch (error) {
         console.error('Error submitting entry:', error);
         setLoading(false);

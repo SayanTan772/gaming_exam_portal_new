@@ -1,3 +1,5 @@
+// added .env variable in API URL
+
 'use client';
 
 import styles from "../../styles/home/section2.module.css";
